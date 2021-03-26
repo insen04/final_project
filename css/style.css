@@ -7,7 +7,7 @@ body{
     font-size:15pt;
     line-height: 1.1;
     height:100vh;
-    background: #333333;
+    background: #202020;
 }
 
 /* *****************navigation bar ******************/
@@ -207,7 +207,7 @@ nav{
 .contact_me_exp {
     font-weight: 100;
     text-align: center;
-    font-size: 10pt;
+    font-size: 20pt;
     line-height: 1.5;
     opacity: 50%;
 }
