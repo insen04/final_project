@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;@700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Insun Kim</a>
+        <div id="menu">
+            <div id="menu_line" onclick="onClickMenu()">
+                <div id="line1" class="line"></div>
+                <div id="line2" class="line"></div>
+                <div id="line3" class="line"></div>
+            </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="current_page" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu_circle" id="menu_circle"></div>
+        </nav>
+    </header>
+
+    <div class="jump_icon">
+        <div class="jump">
+            <a href="#main">Jump to Content</a>
+        </div>
+    </div>
+    
+<main id="main">
+    <div class="container">
+        <div class="contact_me">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact_me_exp">
+            <h2>Email me with any questions. I would be glad to answer your questions.</h2>
+        </div>
+        <div>
+			<div>
+				<div class="input_style">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div>
+				<div class="input_style">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div>
+				<div class="input_style" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div>
+				<div class="input_style">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div>
+				<div class="btn-lrg submit_button">Send Message</div>
+			</div>
+	    </div>
+    </div>
+    
+</main>
+
+<footer class="footer">
+    <p>&#169; 2021 Insun Kim </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
