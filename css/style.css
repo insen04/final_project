@@ -6,14 +6,18 @@ body{
     font-family: 'Roboto',serif;
     font-size:15pt;
     line-height: 1.1;
-    height:100vh;
+    min-height:100vh;
     background: #202020;
 }
 
 /* *****************navigation bar ******************/
 header{
     position:fixed;
-    width:100%
+    width:100%;
+    top:0;
+    height: 65px;
+    background-color: #202020;
+    z-index: 3;
 }
 
 #menu{
@@ -101,43 +105,38 @@ nav{
     height:0;
     background:radial-gradient(circle,#fdc830,#fac42e);
     transition:0.3s ease;
-    border-radius: 50%;
-    margin:15px 50px;
+    border-radius: 0%;
+    margin:0px;
 }
-
 #menu{
     z-index: 2;
     margin:30px 23px;
 }
 
 .change_circle{
-    width:550px;
-    height:540px;
-    transform:translate(62%,-25%)
+    width:100vh;
+    height:100vh;
+    transform:translate(0%,0%)
 }
 
 /* *****************jump to content***************** */
-.jump a{
-    font-size:8pt;
-    text-align: center;
-    line-height: 1.3;
-    position: absolute;
-    top:12px;
-    text-decoration:none;
-    color:#333333;
-    font-weight: 400;
-}
 
-.jump_icon{
-    height:50px;
-    width:50px; 
-    background-color:#fdc830;
-    border-radius:50%;
-    position: relative;
-    /* top:650px;
-    left:310px; */
-    top: 120px;
-    left:23px;
+a.jump{
+    top: 10px;
+}
+  
+a.jump:focus{
+    background: #fdc830;
+    top:100px;
+    text-align: center;
+    position: absolute;
+    padding: 6px;
+    font-weight: 400;
+    font-size:10pt;
+    text-decoration:none;
+    color:white;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
 }
 
 /* *****************footer***************** */
@@ -164,11 +163,11 @@ nav{
 }
 
 #main h1{
-    font-size:25pt;
+    font-size:40pt;
 }
 
 #main p{
-    font-size:10pt;
+    font-size:13pt;
     opacity: 50%;
     font-weight: 100;
     margin: 50px 0;
@@ -178,7 +177,7 @@ nav{
     text-decoration: none;
     color:white;
     font-weight: 100;
-    position: fixed;
+    position: relative;
     top:25px;
     left:23px;
     font-size: 17pt;
@@ -188,7 +187,7 @@ nav{
 .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(10, auto);
+    grid-template-rows: repeat(10, 80px);
     grid-gap: 15px;
 }
 
@@ -256,4 +255,29 @@ textarea {
     background-color: #fdc830;
     color: #333333;
     cursor: pointer;
+}
+
+/* Device = Tablets, Ipads (portrait)
+Screen = B/w 768px to 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Work Page */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+
+    .menu_circle{
+        border-radius: 50%;
+        margin:15px 50px;
+    }
+
+    .change_circle{
+        width:550px;
+        height:540px;
+        transform:translate(62%,-25%)
+    }
+
 }
