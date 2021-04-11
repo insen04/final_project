@@ -123,6 +123,8 @@ nav{
 
 a.jump{
     top: 10px;
+    text-decoration:none;
+    color:white;
 }
   
 a.jump:focus{
