@@ -11,7 +11,9 @@
 <body>
     <a class="jump" href="#main">Jump to Content</a>
     <header>
-        <a class="logo" href="index.html">Insun Kim</a>
+        <a href="index.html">
+            <img src="images/logo.png" class="logo" alt="Logo"> 
+        </a>
         <div id="menu">
             <div id="menu_line" onclick="onClickMenu()">
                 <div id="line1" class="line"></div>
@@ -35,51 +37,42 @@
         <div class="contact_me">
             <h1>Contact Me</h1>
         </div>
-        <div class="contact_me_exp">
-            <h2>Email me with any questions. I would be glad to answer your questions.</h2>
+        <div>
+            <h2 class="contact_me_exp">Email me with any questions. <br>I would be glad to answer your questions.</h2>
         </div>
         <div>
-            <p>Email: insunk@umich.edu</p>
-            <p>Tel: 413 406 8077</p>
-            <p>Location: Ann Arbor, Michigan</p>
+            <p class="contact_me_exp2">Email: insunk@umich.edu</p>
+            <p class="contact_me_exp2">Tel: 413 406 8077</p>
+            <p class="contact_me_exp2">Location: Ann Arbor, Michigan</p>
         </div>
+
         <div>
-			<div>
-				<div class="input_style">
-					<input type="text" required />
-					<label>Name</label> 
-				</div>
-			</div>
-			<div>
-				<div class="input_style">
-					<input type="text" required />
-					<label>Email</label> 
-				</div>
-			</div>
-			<div>
-				<div class="input_style" style="float:right;">
-					<input type="text" required />
-					<label>Phone Number</label> 
-				</div>
-			</div>
-			<div>
-				<div class="input_style">
-					<textarea required></textarea>
-					<label>Message</label>
-				</div>
-			</div>
-			<div>
-				<div class="btn-lrg submit_button">Send Message</div>
-			</div>
-	    </div>
+            <form action="action_page.php">
+          
+              <label for="name">Name</label>
+              <input type="text" id="full_name" name="name" placeholder="Your name">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email address">
+
+              <label for="phone_number">Phone number</label>
+              <input type="text" id="phone_number" name="phone_number" placeholder="Your phone number">
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter message"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        </div>
+        
     </div>
-    
 </main>
 
 <footer class="footer">
     <p>&#169; 2021 Insun Kim </p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
